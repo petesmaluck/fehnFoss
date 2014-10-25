@@ -1,1 +1,96 @@
-Fehn Foss
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+    <meta charset='utf-8'>
+
+    <title>fehn foss</title>
+
+    <!-- Don't forget to load angularjs -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+    <!-- Our modules and controller -->
+  <script src="lib/angular/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <link href='Stylesheets/reset.css' rel='stylesheet' type='text/css'>
+    <link href='Stylesheets/base.css' rel='stylesheet' type='text/css'>
+    <link href='Stylesheets/style.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel=
+    'stylesheet' type='text/css'>
+    <style type='text/css'>
+#img-container { width: 2000px; }
+    #img-container .text { float: left; width: 215px; }
+    #img-container .text p, #img-container .textor p { width: 180px; }
+    #img-container .text2 p { width: auto; }
+    #img-container .picture { float: left; }
+    #img-container .captioning { height: 50px; text-align: left; overflow: visible; }
+    #img-container .captioning .title { margin-top: 3px; text-align: left; }
+    </style>
+</head>
+
+<body class='exhibits section-1 exhibit-1'>
+    <div id='index'>
+        <div class='container'>
+            <div class='top'>
+                <h1 style="font-size:20px"><a href='#/' title=
+                'Fehn Foss'>fehn foss</a></h1><br>
+            </div>
+
+            <ul class='section' id='section_5'>
+                <li class='exhibit_title' id='exhibit_Faces'>
+                    <a href='#/dimepiece'>dimepiece</a>
+                </li>
+
+                <li class='exhibit_title' id='exhibit_Places'>
+                    <a href='#/ibiki'>i b i k i</a>
+                </li>
+
+                <li class='exhibit_title' id='exhibit_Spaces'>
+                    <a href='#/mtl_highways'>mtl highways</a>
+                </li>
+
+                <li class='exhibit_title' id='exhibit_Spaces'>
+                    <a href='#/nebula'>nebula</a>
+                </li>
+
+                <li class='exhibit_title' id='exhibit_Spaces'>
+                    <a href='#/photo_diary'>photo diary</a>
+                </li>
+
+                <li class='exhibit_title' id='exhibit_Spaces'>
+                    <a href='#/portrait_projects'>portrait projects</a>
+                </li>
+            </ul>
+
+            <ul class='section' id='section_7'>
+                <li><span class='section_title' id='section_link_7'><a href=
+                '#/about'>about</a></span></li>
+            </ul>
+
+            <ul class='section' id='section_6'>
+                <li><span class='section_title' id='section_link_6'><a href=
+                '#/contact'>contact</a></span></li>
+            </ul>
+
+            <div class='bot'></div>
+        </div>
+    </div><!-- END OF SIDEBAR -->
+
+    <div id='exhibit'>
+        <div class='container'>
+            <div class='top'>
+                <!-- -->
+            </div><!-- text and image -->
+
+            <div id='img-container'>
+
+
+            	<div ng-view></div>
+              
+
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<div ng-controller="nebula" >
+
+<style type='text/css'>
+#img-container { width: 11900px; }
+</style>
+
+<div ng-repeat="image in images">
+
+<div id='nebula_{{$index}}' class='picture'>
+
+<div class='captioning text2' style='width: 350px; height: 18px;'>
+	<div style='padding: 0 10px 0 0;'>&nbsp;</div>
+</div>
+
+
+<img ng-src="{{image.src}}"  height='500' />
+
+
+<div class='separator' style='float: left; width: 25px;'>&nbsp;</div> 
+
+</div>
+</div>
+</div>
