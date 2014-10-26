@@ -32,6 +32,6 @@ app.config(function($routeProvider) {
         controller: 'portrait_projects'
       }).
       otherwise({
-         redirectTo: '/'
+         redirectTo: '/nebula'
        });
    });
